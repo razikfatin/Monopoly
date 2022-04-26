@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "929573925749",
+    "project_id": "monopoly-b9d49",
+    "storage_bucket": "monopoly-b9d49.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:929573925749:android:3986982f7d337e1070d93c",
+        "android_client_info": {
+          "package_name": "com.example.monopoly"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "929573925749-dp9d89q7b4ulvg3nk512p8jb2hjoau8t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-997K_sAoBqhvATsRz_DmZGsPHN6Klhg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "929573925749-dp9d89q7b4ulvg3nk512p8jb2hjoau8t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
