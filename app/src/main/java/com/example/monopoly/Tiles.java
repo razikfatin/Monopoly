@@ -9,6 +9,7 @@ public class Tiles {
         this.tileID=tileID;
         this.title=title;
         this.type=type;
+        //this.price=price;
         this.owner=0;
     }
 
@@ -19,12 +20,15 @@ public class Tiles {
     public int getOwner(){
         return this.owner;
     }
+
+    public Tiles getTile(){ return this;}
 }
 
 class PropertyTile extends Tiles{
 
     int price, mortgageValue, redeemAmount;
     int[] rent = new int[6];
+    int numberOfHouses;
 
     public PropertyTile(int tileID, String title, String type, int price, int[] rent) {
         super(tileID, title, type);
@@ -32,7 +36,12 @@ class PropertyTile extends Tiles{
         this.mortgageValue=price/2;
         this.redeemAmount = this.mortgageValue + price/10;
         this.rent=rent;
+        this.numberOfHouses=0;
     }
+
+    public int getPrice(){ return this.price;}
+
+    public int getRent(int numberOfH){ return this.rent[numberOfH];}
 }
 
 class UtilityTile extends Tiles{

@@ -33,6 +33,8 @@ public class Player {
         return this.pid;
     }
 
+    public String getName(){ return this.name;}
+
     public int getTotalAssets(){
         return this.totalAssets;
     }
@@ -48,4 +50,24 @@ public class Player {
     public Boolean hasRolled(){ return Rolled; }
 
     public Boolean isTurnOver(){ return turnOver; }
+
+    public void buyProperty( PropertyTile pt){
+        this.ownedTiles.add(pt);
+        this.deductAmount(pt.price);
+        this.totalAssets+=pt.mortgageValue;
+    }
+
+    public void buyRailway( RailwayTile rt){
+        this.ownedTiles.add(rt);
+        this.deductAmount(200);
+        this.totalAssets+=100;
+        this.numberOfRailways+=1;
+    }
+
+    public void buyUtility( UtilityTile ut){
+        this.ownedTiles.add(ut);
+        this.deductAmount(150);
+        this.totalAssets+=75;
+        this.numberOfUtility+=1;
+    }
 }
